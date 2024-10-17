@@ -24,3 +24,20 @@ themeToggler.onclick = () => {
         document.body.classList.add('active');
     }
 };
+// POPUP
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+
+// Form submission handling
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting for demo
+    openPopup();  // Show the popup
+});
+
