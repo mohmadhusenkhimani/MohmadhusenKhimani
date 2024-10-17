@@ -248,7 +248,13 @@
             <input type="email" placeholder="your email" class="box">
             <input type="text" placeholder="subject" class="box">
             <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="tick.png" alt="">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted! Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
         </form>
 
      </section>
