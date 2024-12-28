@@ -395,6 +395,52 @@ section{
 }
 
 
+
+.achievements .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 2rem;
+} 
+.achievements .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border: 1rem solid transparent;
+}
+.achievements .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.achievements .box-container .box .content{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+.achievements .box-container .box:hover .content{
+    transform: scale(1);
+}
+.achievements .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+.achievements .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+
 .contact form{
     margin: 1rem auto; 
     max-width: 70rem;
@@ -420,6 +466,11 @@ section{
 .contact form .box:focus{
     box-shadow: var(--box-shadow-inset);
 }
+li{
+    list-style: none;
+}
+
+
 
 .credits{
     font-size: 2rem;
