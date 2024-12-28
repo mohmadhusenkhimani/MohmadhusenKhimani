@@ -207,6 +207,30 @@ section{
     color: var(--green);
 }
 
+/* Install Button */
+#install-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    color: var(--black);
+    background: var(--bg-color);
+    display: block;
+}
+
+#install-btn:hover {
+    color: var(--green);
+    box-shadow: var(--box-shadow-inset);
+}
+
 
 .about .row{
     display: flex;
