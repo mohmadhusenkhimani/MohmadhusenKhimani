@@ -29,3 +29,11 @@ It showcases my **skills, projects, and achievements** as a **Full Stack Web Dev
 
 ## 📂 Project Structure
 
+/Portfolio
+│── index.html
+│── /css
+│ └── style.css
+│── /js
+│ └── script.js
+│── /images
+│── README.md
