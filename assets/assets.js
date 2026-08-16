@@ -271,7 +271,7 @@ export const workData = [
       "Admin Panel",
     ],
 
-    link: "https://github.com/mohmadhusenkhimani/forever-full-stack",
+    link: "https://forever-frontend-weld-gamma.vercel.app/",
 
     github: "https://github.com/mohmadhusenkhimani/forever-full-stack",
   },
